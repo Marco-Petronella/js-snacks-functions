@@ -5,9 +5,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+const extractInitials = names => {
+    console.log(names);
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+extractInitials(names);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

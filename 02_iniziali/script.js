@@ -6,7 +6,8 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 
 const extractInitials = names => {
-    console.log(names);
+    for (let i=0; i<names.length; i++)
+        console.log(names[i][0]);
 }
 
 // Invoca la funzione qui e stampa il risultato in console

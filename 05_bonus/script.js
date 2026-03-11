@@ -10,9 +10,20 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 
+const temporalHello = (name) => {
+    const currentTime=Temporal.Now.plainTimeISO();
+    const currentHour=currentTime.hour;
+    // console.log(currentTime, currentHour);
+    if (currentHour<13)
+        return "Buongiorno " + name;
+    else if (currentHour<=17)
+        return "Buon pomeriggio " + name;
+    else
+        return "Buonasera " + name;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(temporalHello(name));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.

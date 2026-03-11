@@ -6,14 +6,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 
 const filterNames = names => {
+    const filteredNames = [];
     for (let i=0; i<names.length;i++)
         if (names[i][0]=="A") 
-            console.log(names[i]);
-            
+            filteredNames.push(names[i]);
+    return filteredNames;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-filterNames(names);
+console.log(filterNames(names));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
